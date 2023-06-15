@@ -36,9 +36,9 @@ The project structure follows a modular approach that encourages scalability and
 
 ## Customization
 
-The boilerplate is designed to be flexible and customizable according to your project's needs. Here are some ways you can customize it:
+The boilerplate is designed to be flexible and customizable according to this project's needs. Here are some ways you can customize it:
 
-- **Adding Packages**: If you need additional packages or libraries, you can install them using npm or yarn, and then import and use them in your code.
+- **Adding Packages**: If you need additional packages or libraries, you can install them using npm or yarn, and then import and use them in this code.
 - **Customizing Styling**: Tailwind CSS allows for easy customization. You can modify the `tailwind.config.js` file to update colors, typography, spacing, and more.
-- **Creating New Slices**: Redux Toolkit slices provide a convenient way to manage state and logic for specific features. You can create new slices in the `features/` directory to represent different parts of your application.
-- **Routing**: The boilerplate doesn't include a router by default. You can add your preferred router library (e.g., React Router) to handle navigation between different pages.
+- **Creating New Slices**: Redux Toolkit slices provide a convenient way to manage state and logic for specific features. You can create new slices in the `features/` directory to represent different parts of this application.
+- **Routing**: The boilerplate doesn't include a router by default. You can add this preferred router library (e.g., React Router) to handle navigation between different pages.

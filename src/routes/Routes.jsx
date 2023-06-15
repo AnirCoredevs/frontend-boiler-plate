@@ -4,10 +4,10 @@ import {
   createRoutesFromElements,
   Route,
 } from 'react-router-dom';
-import Home from '../pages/Home';
 import WebsiteLayout from '../layout/website';
 import DashboardLayout from '../layout/dashboard';
 import ProtectedRoute from './ProtectedRoute';
+import { Home } from '../pages';
 
 const Routes = createBrowserRouter(
   createRoutesFromElements(
