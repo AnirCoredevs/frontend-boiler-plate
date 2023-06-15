@@ -7,6 +7,7 @@ import {
 import Home from '../pages/Home';
 import WebsiteLayout from '../layout/website';
 import DashboardLayout from '../layout/dashboard';
+import ProtectedRoute from './ProtectedRoute';
 
 const Routes = createBrowserRouter(
   createRoutesFromElements(
@@ -14,8 +15,10 @@ const Routes = createBrowserRouter(
       <Route path="/" element={<WebsiteLayout />}>
         <Route index element={<Home />} />
       </Route>
-      <Route path="/dashboard" element={<DashboardLayout />}>
-        <Route index element={<Home />} />
+      <Route element={<ProtectedRoute />}>
+        <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<Home />} />
+        </Route>
       </Route>
     </Route>,
   ),
