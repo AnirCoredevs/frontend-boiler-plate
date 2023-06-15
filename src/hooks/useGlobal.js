@@ -52,7 +52,7 @@ const useGlobal = () => {
   };
 
   useEffect(() => {
-    // call the rtk hooks thats needs to populate data in the initialization of application.
+    // call the rtk hooks thats needs to populate data at the initialization of application.
   }, []);
 
   return {

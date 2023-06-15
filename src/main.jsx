@@ -16,7 +16,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <App />
         </GlobalProvider>
       </Provider>
-      GlobalProvider
     </SnackbarProvider>
   </React.StrictMode>,
 );
