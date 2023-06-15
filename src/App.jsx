@@ -3,9 +3,7 @@ import { RouterProvider } from 'react-router-dom';
 import Routes from './Routes';
 
 function App() {
-  return (
-    <RouterProvider router={Routes} />
-  );
+  return <RouterProvider router={Routes} fallbackElement={<>Just blank for now!</>} />;
 }
 
 export default App;
