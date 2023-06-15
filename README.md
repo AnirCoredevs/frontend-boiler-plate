@@ -19,7 +19,6 @@ To get started with the boilerplate, follow these steps:
 
    ```shell
      npm install && npm run dev
-     
     ```
 
 
