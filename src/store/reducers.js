@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import { DemoReducer } from '../features/demo/index';
+import { authSlice } from '../features/auth/slice/AuthSlice';
+import { authApi } from '../features/auth/api/authApi';
 
 export default combineReducers({
-  DemoReducer,
+  auth: authSlice,
+  [authApi.reducerPath]: authApi.reducer,
 });

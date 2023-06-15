@@ -7,7 +7,7 @@ import { io } from 'socket.io-client';
  *
  * @return {Object}  - returns an instance of socket.io with the specified URL and options
  */
-const socket = io(process.env.REACT_APP_SOCKET_URL || 'http://localhost:4000', {
+const socket = io(import.meta.env.REACT_APP_SOCKET_URL || 'http://localhost:4000', {
   withCredentials: true,
   autoConnect: false,
 });
@@ -25,7 +25,7 @@ const useGlobal = () => {
         if (exists !== null) resolve(exists);
         reg.pushManager.subscribe({
           userVisibleOnly: true,
-          applicationServerKey: process.env.REACT_APP_PUBLIC_VAPID,
+          applicationServerKey: import.meta.env.REACT_APP_PUBLIC_VAPID,
         })
           .then((sub) => resolve(sub))
           .catch((e) => {
