@@ -17,8 +17,9 @@ To get started with the boilerplate, follow these steps:
 2. Install dependencies by running the following command:
 
    ```shell
-   npm install
-```
+     npm install && npm run dev
+     
+    ```
 
 
 ## Project Structure
