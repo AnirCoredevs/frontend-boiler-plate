@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function Dropdown() {
   return (
     <div>Dropdown</div>
-  )
+  );
 }
 
-export default Dropdown
+export default Dropdown;
