@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* in case of custom tailwind class rather than defualt classes, they should be added here! */
+@layer components {
+  .bg-blue-500 {
+    background-color: blue;
+  }
+}
+
+/* write resulable classes here with tailwind... */
+@layer utilities {
+    .btn-primary {
+      @apply py-2 px-4  bg-blue-500  font-semibold rounded-lg shadow-md ;
+    }
+}
