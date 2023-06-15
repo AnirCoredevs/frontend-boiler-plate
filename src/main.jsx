@@ -6,13 +6,17 @@ import App from './App';
 import './index.css';
 import store from './store/store';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import { GlobalProvider } from './context/GlobalContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <SnackbarProvider maxSnack={3}>
       <Provider store={store}>
-        <App />
+        <GlobalProvider>
+          <App />
+        </GlobalProvider>
       </Provider>
+      GlobalProvider
     </SnackbarProvider>
   </React.StrictMode>,
 );
